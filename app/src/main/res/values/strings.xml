@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">TigerWeather</string>
+    <string name="app_text">text1</string>
 </resources>

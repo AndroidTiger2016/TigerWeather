@@ -27,7 +27,7 @@ public class County {
     public void setCountyCode(String countyCode) {
         this.countyCode = countyCode;
     }
-    public int getCityId() {
+    int getCityId() {
         return cityId;
     }
     public void setCityId(int cityId) {
