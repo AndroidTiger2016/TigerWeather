@@ -15,6 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.tigerweather.app.R;
+import com.tigerweather.app.service.AutoUpdateService;
 import com.tigerweather.app.util.HttpUtil;
 import com.tigerweather.app.util.Utility;
 
@@ -175,6 +176,8 @@ private TextView cityNameText;
         currentDateText.setText(prefs.getString("current_date", ""));
         weatherInfoLayout.setVisibility(View.VISIBLE);
         cityNameText.setVisibility(View.VISIBLE);
+        Intent intent = new Intent(this, AutoUpdateService.class);
+        startService(intent);
     }
 }
 
